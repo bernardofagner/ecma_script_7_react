@@ -1,3 +1,5 @@
+
+
 /*#######################################################################################################*/
 {
     console.log('**************************************** SEÇÃO 1 ****************************************');
@@ -120,6 +122,26 @@
     vetor1[0] = 'valor alterado também';
     console.log('Vetor1 com outro valor alterado: ', vetor1);
     console.log('Vetor3 criado antes do vetor1 ter outro valor alterado: ', vetor3);
+    console.log();
+}
 
+/*#######################################################################################################*/
+{
+    console.log('**************************************** SEÇÃO 4 ****************************************');
+    console.log();
+
+    console.log('***FUNÇÃO MAP PARA VETORES***');
+    const vetorDeDados = [1, 2, 3, 'a',true, 'c'];
+
+    console.log('Vetor de dados: ', vetorDeDados);
+
+    const resultado = vetorDeDados.map((elemento) => {
+        if(typeof(elemento) === 'number')
+            return elemento;
+        else
+            return NaN;
+    });
+
+    console.log('Vetor filtrado pelo Map(): ', resultado);
 
 }
